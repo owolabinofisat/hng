@@ -3,8 +3,8 @@
 $slackName = $_GET['slack_name'] ?? '';
 $track = $_GET['track'] ?? '';
 
-// Validate the 'track' parameter (you can add more validation if needed)
-$validTracks = ['Web Development', 'Data Science', 'Mobile App Development'];
+// Validate the 'track' parameter
+$validTracks = ['Backend Software Development', 'Frontend Software Development', 'Data Science', 'Mobile App Development'];
 if (!in_array($track, $validTracks)) {
     echo json_encode(['error' => 'Invalid track parameter.']);
     exit;
@@ -26,8 +26,8 @@ if ($currentTime < $twoHoursAgo || $currentTime > $twoHoursLater) {
     exit;
 }
 
-// Define GitHub URLs (replace with actual URLs)
-$fileUrl = 'https://github.com/owolabinofisat/repo/hng-.git';
+// Define GitHub URLs 
+$fileUrl = 'https://github.com/owolabinofisat/repo/hng.git';
 $sourceCodeUrl = 'https://github.com/owolabinofisat';
 
 // Prepare the response
